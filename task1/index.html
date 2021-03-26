@@ -5,22 +5,30 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Шибениця</h1>
 <script>
-    var words = [
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Document</title>
+    </head>
+    <body>
+    <h1>Шибениця</h1>
+    <script>
+        var words = [
         "javascript",
-        "fish",
+        "monkey",
         "amazing",
-        "warning"
-    ];
-    var word = words [Math.floor(Math.random() * words.length )];
-    var answerArray = [];
-    for (var i = 0; i< word.length; i++){
+        "pancake"
+        ];
+        var word = words [Math.floor(Math.random() * words.length )];
+        var answerArray = [];
+        for (var i = 0; i< word.length; i++){
         answerArray[i]="_";
     }
     var remainingLetters = word.length;
-    while (remainingLetters > 0 ) {
-        alert( answerArray.join(""));
+    while (remainingLetters > 0) {
+        alert(answerArray.join(""));
         var guess = prompt("Guess a letter, on click Cancel to stop playing.");
         if (guess === null){
             break;
@@ -37,6 +45,10 @@
     }
     alert(answerArray.join(""));
     alert("Good job! The answer was " + word)
+</script>
+</body>
+</html>
+
 </script>
 </body>
 </html>
